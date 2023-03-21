@@ -24,6 +24,7 @@ function CardPokemon() {
   async function handleSubmit(event) {
     event.preventDefault();
     
+    
     const pokemon = await getPokemon("pokemon", value);
     const otherData = await getPokemon("pokemon-species", value);
 
@@ -54,7 +55,7 @@ function CardPokemon() {
           </div>
           <div className="information-pokemon">
             <div className="pokemon-container">
-              <div className="image-pokemon" >
+              <div className="image-pokemon"  id="#poke-screen">
                 <h1 className="name-pokemon">{pokemon.name}</h1>
                 {pokemon.imageFront ? (
                   <div className="image-group">

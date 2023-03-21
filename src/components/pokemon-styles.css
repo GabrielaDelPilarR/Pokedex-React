@@ -5,6 +5,7 @@
   
   .pokedex-container {
     display: flex;
+    justify-content: center;
     margin: 100px auto;
     max-width: 900px;
   }
@@ -183,6 +184,7 @@
   
   .decoration {
     display: flex;
+    font-family: 'Space Mono', monospace;
   }
   
   .d-1 {
